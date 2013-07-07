@@ -1,0 +1,21 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+   <PreferenceCategory 
+        android:title="@string/pace"
+        android:key="pref_key_pace_settings">	
+  		<ListPreference
+            android:key="pref_key_domain_parameter_list"
+            android:entries="@array/domain_parameters"
+            android:summary="@string/domain_parameter_summary" 
+            android:entryValues="@array/domain_parameters_values"
+            android:title="@string/domain_parameter_title"/>
+  	 <ListPreference
+            android:key="pref_key_algorithms"
+            android:entries="@array/algorithms"
+            android:summary="@string/algorithms_summary" 
+            android:entryValues="@array/algorithms_values"
+            android:title="@string/algorithms_title" />
+  		
+    </PreferenceCategory>
+    
+   
+</PreferenceScreen>
